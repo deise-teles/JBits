@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang = "pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <title>JBits</title>
+  <link rel = "sortcut icon" href = "/img/jbitsc.png" type = "image/png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <!-- Biblioteca jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+</head>
+
+<body>
+
+  <header   style = "margin: -8px">
+    <div class = "menu">
+      &nbsp&nbsp&nbsp&nbsp<img src = "/img/jbitst.png" id = "imageLogo" style = "padding-top: 3px"><text id = "nbspIMG"> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</text>
+      <div id = "menu_botoes"> 
+        <button class = "btMenu" id = "mnHome"> <a href = "#linkcarrossel"> Home </a></button> <text class = "nbsp">&nbsp&nbsp&nbsp&nbsp</text>
+        <!--<button class = "btMenu" id = "mnBlog"> Blog </button> <text class = "nbsp">&nbsp&nbsp&nbsp&nbsp&nbsp</text>-->
+        <button class = "btMenu" id = "mnSobre"> Sobre </button> <text class = "nbsp">&nbsp&nbsp&nbsp&nbsp</text>
+        <button class = "btMenu" id = "mnServicos"> <a href = "#tituloservicos"> Serviços </a></button> <text class = "nbsp">&nbsp&nbsp&nbsp&nbsp</text>
+        <button class = "btMenu" id = "mnEspecialidades"> <a href = "#tituloEspecialidades"> Especialidades </a></button> <text class = "nbsp">&nbsp&nbsp&nbsp&nbsp&nbsp</text>
+        <button class = "btMenu" id = "mnSuporte"> Suporte </button> <text class = "nbsp">&nbsp&nbsp&nbsp&nbsp</text>
+        <button class = "btMenu" id = "mnContato"> <a href = "#footer">Contato </a></button> <text class = "nbsp">&nbsp&nbsp&nbsp&nbsp</text>
+        <button class = "btMenu" id = "mnClientes_Parceiros"> <a href = "#tituloClienteParc"> Clientes/Parceiros </a></button>
+      </div> <!--Class menu_botoes-->
+      <button id = "-botaoMenu"><i class="fa fa-solid fa-bars fa-4x" style="color:rgb(176,196,222);"></i></button>
+    </div> <!-- CLASS menu -->   
+  </header>
+<!-- RESPONSIVIDADE -->
+  <div id = "RESPONmenu">
+    <div id = "RES_menu_botoes"> 
+     <button class = "RESbtMenu" id = "RESmnHome"> Home </button> <br/>
+     <button class = "RESbtMenu" id = "mnBlog"> Blog </button> <br/>
+     <button class = "RESbtMenu" id = "mnSobre"> Sobre </button> <br/>
+     <button class = "RESbtMenu" id = "mnServicos"> <a href = "#tituloservicos"> Serviços </a></button> <br/>
+     <button class = "RESbtMenu" id = "mnEspecialidades"> <a href = "#tituloEspecialidades"> Especialidades </a></button> <br/>
+     <button class = "RESbtMenu" id = "mnSuporte"> Suporte </button> <br/>
+     <button class = "RESbtMenu" id = "mnContato"> Contato </button> <br/>
+     <button class = "RESbtMenu" id = "mnClientes_Parceiros"> <a href = "#tituloClienteParc"> Clientes/Parceiros </a></button>
+    </div> <!-- #RES_menu_botoes -->
+  </div> <!-- #RESPONmenu -->
+  
+<!--carrossel de imagem 1-->
+   <div class="carrossel" id = "linkcarrossel">
+    <ul>
+      <li class="img">
+        <img src="/img/IMG1.png" width="1325px" height="530px">
+      </li>
+      <li class="img">
+        <img src="/img/IMG2.png" width="1325px" height="530px">
+      </li>
+      <li class="img">
+        <img src="/img/IMG3.png" width="1325px" height="530px">
+      </li>
+    </ul>
+  </div>
+<!--carrossel de imagem 1 -->
+<!-- carrossel responsivo -->
+  <div id="carrosselinv">
+    <div class="carrossel2">
+      <ul>
+        <li class="img">
+          <img src="/img/IMG1.png" width="1000px" height="500px">
+        </li>
+        <li class="img">
+          <img src="/img/IMG2.png" width="1000px" height="500px">
+        </li>
+        <li class="img">
+          <img src="/img/IMG3.png" width="1000px" height="500px">
+        </li>
+      </ul>
+    </div>
+    </div>
+ <!-- carrossel responsivo -->
+<!-- Display Serviços ------------------------------------------------------------------------->
+  <br/><br/><p class = "titulo" id = "tituloservicos">Serviços</p>
+  <div id = "displayServicos1">
+    <div id = "serviRMV"> 
+    <button id = "roteamento" class = "servicos">
+      <div style = "display:inline-block">
+      <i class = "fa fa-duotone fa-route fa-3x" style = "color:rgb(42,42,42);"></i>
+      <div class = "titulo_servicos">Roteamento</div>
+      </div>
+    </button> <!-- CLASS servicos --> &nbsp&nbsp&nbsp&nbsp
+      <div class = "infoServicos" id = "infoRot">
+        <div>Soluções em roteamento BGP, OSPF, Roteamento Estático, MPLS, VPLS, VRF. Suporte com as principais vendors do mercado.</div>
+      </div>&nbsp&nbsp&nbsp&nbsp
+    <button id = "monitoramento" class = "servicos">
+    <div style = "display:inline-block">
+      <i class = "fa fa-duotone fa-laptop-medical fa-3x" style = "color:rgb(42,42,42);"></i> 
+      <div class = "titulo_servicos">Monitoramento </div>
+    </div>
+    </button> <!-- CLASS servicos --> &nbsp&nbsp&nbsp&nbsp
+      <div class = "infoServicos" id = "infoMon">Monitoramento de infraestrutura, neste caso, pode ser chamado de monitoramento de infraestrutura de TI ou até mesmo monitoramento de TI é a base que sustenta todo o serviço do monitoramento corporativo.</div>&nbsp&nbsp&nbsp&nbsp
+    <button id = "virtualizacao" class = "servicos">
+      <div style = "display:inline-block">
+      <i class = "fa fa-duotone fa-network-wired fa-3x" style="color:rgb(42,42,42);"></i>
+      <div class = "titulo_servicos"> Virtualização </div>
+      </div>
+    </button> <!-- CLASS servicos --> &nbsp&nbsp&nbsp&nbsp
+    <div class = "infoServicos" id = "infoVirt">A virtualização é uma tecnologia que permitiu fazer um uso mais eficiente das capacidades dos servidores, permitindo consolidar em um servidor físico vários servidores virtuais em taxas que vão desde 5:1 a 30:1</div>&nbsp&nbsp&nbsp&nbsp
+    </div> <!-- ID serviRMV -->
+  </div> <!-- ID displayServicos1--><br/>
+  <div id = "displayServicos2">
+    <div id = "serviIDB">
+    <button id = "ipv6" class = "servicos">
+      <div style = "display:inline-block">
+      <i class = "fa fa-duotone fa-globe fa-3x" style="color:rgb(42,42,42);"></i>
+      <div class = "titulo_servicos"> IPv6 </div>
+      </div>
+    </button> <!-- CLASS servicos --> &nbsp&nbsp&nbsp&nbsp
+     <div class = "infoServicos" id = "infoIp">Com o esgotamento dos endereços IPv4 é inevitável a adoção do IPv6 pelo mundo. 
+        O IPv6 não é apenas um “upgrade” no IPv4, para aumentar o número de endereços disponíveis, ele traz uma série de novas funcionalidades.</div>&nbsp&nbsp&nbsp&nbsp
+    <button id = "dns" class = "servicos">
+      <div style = "display:inline-block">
+      <i class = "fa fa-server fa-3x" style = "color:rgb(42,42,42);"></i>
+      <div class = "titulo_servicos"> DNS </div>
+      </div>
+    </button> <!-- CLASS servicos --> &nbsp&nbsp&nbsp&nbsp
+    <div class = "infoServicos" id = "infoDNS">Com um Servidor de DNS local, você tem até 15% de performance no tempo de resposta nas resoluções de nome. Sem contar que você não sofre instabilidades que geralmente os DNS públicos sofrem.</div> &nbsp&nbsp&nbsp&nbsp
+    <button id = "backup" class = "servicos">
+      <div style = "display:inline-block">
+      <i class = " fa fa-solid fa-cloud fa-3x" style = "color:rgb(42,42,42);"></i> 
+      <div class = "titulo_servicos"> Backup </div>
+      </div>
+      </button> <!-- CLASS servicos --> &nbsp&nbsp&nbsp&nbsp
+      <div class = "infoServicos" id = "infoBackup">Soluções automatizadas, onde permite a cópia de seus dados mais preciosos, para um storage local e/ ou armazenamento em Cloud.</div>&nbsp&nbsp&nbsp&nbsp
+    </div> <!-- ID serviIDB -->
+  </div><!--  ID displayServicos2 -->
+<!-- Display Serviços ------------------------------------------------------------------------->
+<!-- Display Serviços Responisvo -------------------------------------------------------------->
+  <div id = "displayResponServicos">
+  <div id = "serviRM">
+    <div id = "RESroteamento">
+      <i class = "fa fa-duotone fa-route fa-3x" style = "color:rgb(42,42,42);"></i>
+      <p style = "font-size: 90%; font-weight: 600">Roteamento</p>
+      <p class = "pRESinfo">Soluções em roteamento BGP, OSPF, Roteamento Estático, MPLS, VPLS, VRF. Suporte com as principais vendors do mercado.</p>
+    </div> <!-- # RESroteamento -->
+    <div id = "RESmonitoramento">
+      <i class = "fa fa-duotone fa-laptop-medical fa-3x" style = "color:rgb(42,42,42);"></i>
+      <p style = "font-size: 90%; font-weight: 600">Monitoramento</p>
+      <p class = "pRESinfo">Monitoramento de infraestrutura, neste caso, pode ser chamado de monitoramento de infraestrutura de TI ou até mesmo monitoramento de TI é a base que sustenta todo o serviço do monitoramento corporativo.</p>
+    </div> <!-- # RESmonitoramento -->
+  </div><br/><!-- #serviRM -->
+  
+  <div id = "serviVI">
+    <div id = "RESvitualizacao">
+      <i class = "fa fa-duotone fa-network-wired fa-3x" style="color:rgb(42,42,42);"></i>
+      <p style = "font-size: 90%; font-weight: 600">Virtualização</p>   
+      <p class = "pRESinfo">A virtualização é uma tecnologia que permitiu fazer um uso mais eficiente das capacidades dos servidores, permitindo consolidar em um servidor físico vários servidores virtuais em taxas que vão desde 5:1 a 30:1</p> 
+    </div> <!-- # RESvirtualizacao -->
+    <div id = "RESipv6">
+      <i class = "fa fa-duotone fa-globe fa-3x" style="color:rgb(42,42,42);"></i>
+      <p style = "font-size: 90%; font-weight: 600">IPv6</p> 
+      <p class = "pRESinfo">Com o esgotamento dos endereços IPv4 é inevitável a adoção do IPv6 pelo mundo. 
+      O IPv6 não é apenas um “upgrade” no IPv4, para aumentar o número de endereços disponíveis, ele traz uma série de novas funcionalidades.</p>
+    </div> <!-- #RESipv6 -->
+  </div><br/><!-- #serviVI -->
+    
+  <div id = "serviDB">
+    <div id = "RESdns">
+      <i class = "fa fa-server fa-3x" style = "color:rgb(42,42,42);"></i>
+      <p style = "font-size: 90%; font-weight: 600">DNS </p> 
+      <p class = "pRESinfo">Com um Servidor de DNS local, você tem até 15% de performance no tempo de resposta nas resoluções de nome. Sem contar que você não sofre instabilidades que geralmente os DNS públicos sofrem.</p> 
+    </div> <!-- #RESdns -->
+    <div id = "RESbackup">
+      <i class = " fa fa-solid fa-cloud fa-3x" style = "color:rgb(42,42,42);"></i>  
+      <p style = "font-size: 90%; font-weight: 600">Backup</p> 
+      <p class = "pRESinfo">Soluções automatizadas, onde permite a cópia de seus dados mais preciosos, para um storage local e/ ou armazenamento em Cloud.</p> 
+    </div> <!-- #RESbackup -->
+    </div><!-- #serviDB -->
+  </div><!--#displayResponServicos-->
+<!-- Display Serviços Responisvo -------------------------------------------------------------->
+<!-- Display Especialidades ------------------------------------------------------------------->
+  <p id = "tituloEspecialidades">Especialidades</p>
+  <div id = "displayEspecialidades">
+   <div id = "image">
+  <center><div>
+     <button class = "btIMG" id = "slide1"> </button> &nbsp&nbsp
+     <button class = "btIMG" id = "slide2"> </button> &nbsp&nbsp
+     <button class = "btIMG" id = "slide3"> </button> &nbsp&nbsp
+     <button class = "btIMG" id = "slide4"> </button> &nbsp&nbsp
+     <button class = "btIMG" id = "slide5"> </button> &nbsp&nbsp
+     <button class = "btIMG" id = "slide6"> </button> &nbsp&nbsp
+     <button class = "btIMG" id = "slide7"> </button> &nbsp&nbsp
+     <button class = "btIMG" id = "slide8"> </button>
+   </div></center>
+   <div>
+     <div id = "imagem1" style = "display: none; margin-left: 30%; margin-right: -50%">
+       <img src = "/img/MikroTik.png" width = "30%">
+     </div>
+     <div id = "imagem2" style = "display: none; margin-left: 35%; margin-right: -50%">
+       <img src = "/img/Zabbix.png" width = "25%">
+     </div>
+     <div id = "imagem3" style = "display: none; margin-left: 35%; margin-right: -50%">
+       <img src = "/img/Vmware1.png" width = "30%">
+     </div>
+     <div id = "imagem4" style = "display: none; margin-left: 32%; margin-right: -50%">
+       <img src = "/img/Proxmox.png" width = "30%">
+     </div>
+     <div id = "imagem5" style = "display: none; margin-left: 30%; margin-right: -50%">
+       <img src = "/img/Huawei.png" width = "30%">
+     </div>
+     <div id = "imagem6" style = "display: none; margin-left: 30%; margin-right: -50%">
+       <img src = "/img/debian.png" width = "30%">
+     </div>
+     <div id = "imagem7" style = "display: none; margin-left: 35%; margin-right: -50%">
+       <img src = "/img/Ubiquiti.png" width = "30%">
+     </div>
+     <div id = "imagem8" style = "display: none; margin-left: 40%; margin-right: -50%">
+       <img src = "/img/Cisco.png" width = "20%">
+     </div>
+   </div>
+    </div> 
+  </div> <!-- div id = "displayEspecialidades"-->
+  <div id = "displayEspecialidadesRespon" style = "text-align: center;">
+    <img src = "/img/especialidades.png" width = "800px">
+  </div> <!-- div id = "displayEspecialidadesRespon"-->
+<!-- Display Especialidades ------------------------------------------------------------------->
+<!-- Display Clientes e parceiros ------------------------------------------------------------->
+<div>
+ <center> <p id = "tituloClienteParc">Clientes e Parceiros</h2> </center>
+  <div id = "parceiros" style = "margin-bottom: 70px">
+    <div style = "margin-right: 110px">
+      <figure>
+        <a href = https://portalcrtelecom.com.br><img src="/img/crtelecom.png" height="100px"></a>
+      </figure>
+    </div>
+    <div style = "margin-left: 110px; margin-bottom: 110px;">
+      <figure>
+        <a href = https://adriano.eti.br><img src = "/img/routersolutions.png" height="100px"></a>
+      </figure>
+     </div>
+    </div>  <!-- #parceiros -->             
+  </div>
+<!-- Display Clientes e parceiros ------------------------------------------------------------->
+<!-- Display Footer --------------------------------------------------------------------------->
+ <footer id = "footer" style = "margin-bottom: -100px">
+    <div class = "container">
+       <div class = "footer">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+         <div style = "margin: 15px 15px -70px 15px"">
+           <h2>Empresa</h2><br>
+           <div class = "logof">
+             <img src = "/img/logo.png" height = "100px">
+           </div>
+         </div>
+         &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+         <div style = "margin: 15px 15px -70px 15px">
+           <h2>Endereço</h2><br>
+           <p>Avenida Rui Barbosa Nª 408, Bomfim - Santo Amaro - BA</p>
+         </div> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+         <div style = "margin: 15px 15px -70px 15px">
+           <h2>Contato</h2><br>
+           <div class = "figure" style = "display: inline-flex">
+           <figure>
+             <a href = "https://api.whatsapp.com/send?phone=5575999742970&text=Ol%C3%A1%20queria%20saber%20que%20or%C3%A7amentos%20est%C3%A3o%20dispon%C3%ADveis%20para%20a%20minha%20empresa%20%3F"><img src = "/img/whatsapp-logo-03.png" height = "30px"></a>
+           </figure>
+           <figure> 
+             <a href = "https://t.me/Jbiits"><img src = "/img/Telegram.png" height = "30px"></a>
+           </figure>
+            <figure><a href = "mailto:contato@jbits.com.br">
+              <img src = "/img/email-logo-png-1114.png" height = "30px">
+              </a>
+            </figure>
+          </div> <!-- Estilizar imagens FOOTER-->
+        </div>
+        <div style = "position: relative; top: 35px; left: 107">
+          <p  class = "copy"> © Copyright JBits 2018 2022 | Todos os direitos reservados. </p>
+        </div>
+      </div><!-- CLASS footer-->
+    </div> <!-- CLASS container-->
+  </footer>
+<!-- CLASS cookies-->
+  <div class="cookies-container">
+        <div class="cookies-conteudo">
+            <p>Este site utiliza cookies para que o usuário tenha a melhor experiência.</p>
+           <a href = "https://Politicas-e-privacidade-Jbits.francisco33.repl.co"> Políticas de privacidade </a>
+            <div class="cookies-pref">
+               <!-- <label> <input type="checkbox" checked data-function ="Analytics">&nbsp&nbspAnálise de uso</label>
+                <label> <input type="checkbox" checked data-function ="Marketing">&nbsp&nbspMarketing</label>-->
+            </div>
+            <button class="cookies-save">Aceitar</button>
+        </div>
+    </div>
+
+<!-- Display Footer --------------------------------------------------------------------------->
+<!-- Display Footer Responsivo ---------------------------------------------------------------->
+  <footer id = "footerResponsivo">
+   <div class = "containerResponsivo">
+     <div class = "footerResponsivo"> 
+       <div style = "padding-top: -5px; padding-bottom: 2px">
+        <h2>Empresa</h2>
+         <img src = "/img/logo.png" height = "50px">
+       </div> <br>
+      <div>
+        <h2>Endereço</h2>
+        <p style = "font-size: 20px;">Avenida Rui Barbosa Nª 408, Bomfim - Santo Amaro - BA</p>
+      </div><br>
+       <div>
+         <h2>Contato</h2>
+         <div class = "figureResponsivo" style = "display: inline-flex">
+           <figure>
+             <a href = "https://api.whatsapp.com/send?phone=5575999742970&text=Ol%C3%A1%20queria%20saber%20que%20or%C3%A7amentos%20est%C3%A3o%20dispon%C3%ADveis%20para%20a%20minha%20empresa%20%3F"> <img src = "/img/whatsapp-logo-03.png" height = "30px"> </a>
+           </figure>
+           <figure> 
+             <a href = "https://t.me/Jbiits"> <img src = "/img/Telegram.png" height = "30px"> </a>
+           </figure>
+           <figure> 
+             <a href = "mailto:contato@jbits.com.br"> <img src = "/img/email-logo-png-1114.png" height = "30px"> </a>
+            </figure>
+         </div> <!-- Estilizar imagens FOOTER-->
+       </div>
+       <div style = "position: relative; top: 10px;">
+         <p  class = "copyResponsivo" style = "font-size: 15px;"> © Copyright JBits 2018-2022 | Todos os direitos reservados. </p>
+       </div>
+       </div> <!-- .footerRespon2 -->
+     </div><!-- CLASS footer-->
+   </div> <!-- CLASS container-->
+ </footer>
+<!-- Display Footer Responsivo ---------------------------------------------------------------->
+  <script src = "script.js"></script>
+</body>
+</html>

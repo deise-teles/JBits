@@ -1,0 +1,429 @@
+*{ 
+    font-family: Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+   }
+   html, body {
+     height: 750px;
+     width: 100%;
+     background-color: rgb(234,234,235);
+     position: relative;
+   }
+   a{
+     text-decoration: none;
+     font-weight: normal;
+   }
+   figure {
+     height: 80px;
+     width: 100px; 
+     display : flex; 
+     justify-content: center; 
+   }
+   /*CARROSSEL*/
+     .carrossel {
+       width: 1325px;
+       overflow: hidden;
+       justify-content: center;
+       margin:8px auto;
+       margin-left:-10px;
+       margin-right:-20px;
+       margin-bottom:0px;
+       margin-top: 100px;
+     }
+     .carrossel ul {
+       display: inline-flex;
+       list-style: none;
+       width: 3750px;
+       height: 530px;
+       margin: 0%;
+       padding: 0%;
+     }
+     .carrossel li {
+       position: relative;
+       animation: slide 15s infinite ease-out;
+     }
+     @keyframes slide {
+       0% { left: 0px }
+       20% { left: 0px }
+       30% { left: -1325px }
+       50% { left: -1325px }
+       60% { left: -2650px }
+       90% { left: -2650PX; }
+       100% { left: 0px }
+     }
+     #carrosselinv {
+       display: none;
+     }
+   /*Seletor individual ------------------------------------------------------------*/
+   #parceiros {
+    display: flex;
+    justify-content: center;
+   }
+   #menu_botoes { display: inline; }
+   /*Seletor de Classe -------------------------------------------------------------*/
+   .menu {
+     background: rgb(42,42,42);
+     height: 100px;
+     opacity: 1;
+     z-index: 1;
+     position: fixed;
+       top: 0px;
+       left: 0px;
+   }
+   .titulo_servicos {
+     display: flex;
+     justify-content: center;
+   }
+   .infoservicos { display: none; }
+   .titulo_servicos{
+     font-size: 130%;
+     font-stretch: ultra-expanded;
+   }
+   .btMenu{
+     font-size: 105%;
+     font-weight: bold;
+     transition: font-size 5s;
+   }
+   .btMenu:hover { 
+     font-size: 160%;
+   }
+   .servicos {
+     background-image: linear-gradient(45deg, rgb(255,255,255), rgb(245,255,250), rgb(245,245,245));
+     padding: 30px;
+   }
+   .bloco_1 { height: 50px; }
+   .item { display: inline-flex; }
+   .btIMG{
+     height: 25px;
+     width: 25px;
+     border-radius: 20px;
+     border: none;
+     background-color: black;
+     transition: background-color 1s;
+   }
+   .btIMG:hover{ background-color: rgb(79,79,79); }
+   .infoServicos{
+     display: none;
+     font-size: 78%;
+     color:  white;
+     font-weight: 650;
+     padding: 20px;
+     height: 100 px;
+     width: 350px;
+     transition: background-image 5s;
+   }
+   .infoServicos:hover{
+     background: linear-gradient(217deg, rgba(0,0,128,.8), rgba(0,0,128,0) 70.71%),
+                 linear-gradient(127deg, rgba(70,130,180,.8), rgba(70,130,180,0) 70.71%),
+                 linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+     padding: 15px;
+   }
+   .show {display:block;}
+   /*UNIÃO -------------------------------------------------------------------------*/
+   #-botaoMenu, #RESPONmenu, #displayResponServicos, #footerResponsivo, #carrosselinv, #displayEspecialidadesRespon { display: none; }
+   .servicos, #infoRot, #infoMon, #infoVirt, #infoIp, #infoDNS, #infoBackup {
+     height: 100 px;
+     width: 350px;
+     box-shadow: 5px 5px 3px rgb(176,196,222);
+     border-radius: 10px;
+     border: none;
+     text-align: center;
+   }
+   .btMenu, a, .RESbtMenu {
+     color:rgb(176,196,222);
+     background-color: rgba(10,23,55,0);
+     border:none; 
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     font-weight: bold;
+     transition: color 1s;
+   }
+   .btMenu:hover, a:hover {
+     color: rgb(176,196,222);
+   }
+   #roteamento, #monitoramento, #virtualizacao, #ipv6, #dns, #backup {
+     display: flex;
+     justify-content: center;
+   }
+   #displayServicos1, #displayServicos2, .especialidades { 
+     display: flex;
+     justify-content: center;
+   }
+   #serviRMV, #serviIDB {
+     display: inline-flex;
+     text-align: center;
+   }
+   #tituloEspecialidades, #tituloservicos, #tituloClienteParc {
+     font-size: 200%;
+     font-family: 'Muli', sans-serif;
+     font-weight: 540;
+     text-align: center;
+     padding: 50px;;
+   }
+   #gpImg1, #gpImg2 {
+     display: flex; 
+     justify-content: center;
+   }
+   /* Clientes e parceiros ---------------------------------------------------------*/
+   .Cet{
+     display: flex;
+     justify-content:center;
+   }
+   /*FOOTER ------------------------------------------------------------------------*/
+   #footer{
+     display: flex;
+   }
+   .footer li {
+     list-style: none;
+   }
+   .footer img {
+     height: 30px;
+   }
+   footer {
+     background:   rgb(42,42,42) ; 
+     height: 100px;
+     width: 1255px;
+     display: flex;
+     justify-content: center;
+     text-align: center;
+     font-family: Helvetica, sans-serif;
+     margin-top: 10px;
+     margin-left: -10px;
+     margin-right: -10px;
+     margin-bottom: -50px;
+     padding: 30px;
+   }
+   .footer {
+     display: inline-flex;
+   }
+   .footer h2 {
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     font-size: medium;
+     color:lightgray;
+     font-weight: bold;
+   }
+   .footer p {
+     font-size: x-small;
+     color: lightgray;
+     text-align: center;
+    
+   }
+   .figure{
+     margin-top: 0;
+   }
+   .copy{
+     margin-right: 50px;
+     color: rgb(211,211,211);
+   }
+   
+   
+   /*Aceitar cookies */
+   .cookies-container {
+       color: #222;
+       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+       position: fixed;
+         top: 5px;
+       width: 100%;
+       padding: 20px;
+       z-index: 1000;
+       /*top: 2;*/
+   }
+   
+   .cookies-conteudo {
+       /*box-shadow: 0 1px 3px rgba(0, 0, 0, 15);*/
+       background-color: rgb(234,234,235);
+       box-shadow: 0 0 1em 	rgb(105,105,105);
+       border-radius: 3px;
+       max-width: 520px;
+       padding: 10px;
+       margin: 0 auto;
+       justify-content: center;
+       display: grid;
+       grid-template-columns: 1fr auto;
+       gap: 2px;
+       opacity: 0;
+       transform: translate(y);
+       animation: slideUp 0.5s forwards;
+   }
+   
+   @keyframes slideUp {
+       to {
+           transform: initial;
+           opacity: initial;
+       }
+   }
+   
+   .cookies-pref label {
+       margin-right: 16px;
+   }
+   
+   .cookies-save {
+       grid-column: 2;
+       grid-row: 1/3;
+       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+       font-size: 16px;
+       background-color: 	rgb(70,130,180);
+       cursor: pointer;
+       color: white;
+       border: none;
+       border-radius: 5px;
+       padding: 12px 16px;
+       margin-top: 3px;
+       margin-bottom: 3px;
+       margin-right: 5px;
+       height: 45px;
+   }
+   
+   /*RESPONSIVIDADE ----------------------------------------------------------------*/
+     @media (max-width: 1000px) {
+       /*html, body {
+         height: 1500px;
+         width: 1000px;
+       }*/
+       .menu{
+         height: 100px;
+         width: 998px;
+         position: fixed;
+           top: 0px;
+           left: 0px;
+       }
+       .btMenu{
+         font-size: 130px;
+       }
+       .nbsp{
+         font-stretch: ultra-condensed;
+         font-size:  xx-small;
+       }
+       #imageLogo{
+         height: 70px;
+         margin-left:20px;
+       }
+       #-botaoMenu{
+         display: block;
+         position: absolute;
+          top: 15px;
+          right: 10px;
+         background: rgb(42,42,42);
+         border: none;
+       }
+       #RESPONmenu{
+         display: none;
+         width: 250px;
+         height: 300px;
+         padding: 3px;
+         background-color: rgb(79,79,79);
+         z-index: 1;
+         position: fixed;
+          top: 40px;
+          right: 40px;
+         border-radius: 5px;
+         }
+       .RESbtMenu{
+         font-size: 30px;
+         padding: 1px;
+       }
+       #displayEspecialidadesRespon{
+         display: block;
+       }
+       #tituloEspecialidades, #tituloservicos, #tituloClienteParc {font-size: 50px;}
+       #displayServicos1, #displayServicos2, #displayEspecialidades, .carrossel, .btMenu {display: none;}
+       #displayResponServicos{
+         display: block;
+         text-align: center;
+       }
+       #serviRM {display: block;}
+       #RESroteamento, #RESmonitoramento, #RESvitualizacao, #RESipv6, #RESdns,     #RESbackup{
+         background-image: linear-gradient(45deg, rgb(255,255,255), rgb(245,255,250), rgb(245,245,245));
+         box-shadow: 2px 2px 2px rgb(176,196,222);
+         text-align: center;
+         width: 375px;
+         height: 285px;
+         overflow: auto;
+         border: none;
+         border-radius: 10px;
+         padding: 10px;
+          margin-right: 15px;
+          margin-left: 15px;
+          margin-top: 3px;
+          margin-bottom: 3px;
+         display: inline-block;
+         font-size: 30px; 
+       }
+       .pRESinfo{
+         font-size: 20px; 
+         text-align: justify; 
+          padding-top: 0px;
+          padding-right: 20px;
+          padding-bottom: 0px;
+          padding-left: 20px;
+       }
+       /*FOOTER RESPONSIVO*/
+       #footer{display: none}
+       #footerResponsivo{
+         width: 1004px;
+         background: rgb(42,42,42) ; 
+         height: 350px;
+         display: flex;
+         flex-direction: column;
+         text-align: center;
+         font-family: Helvetica, sans-serif;
+          margin-top: 5px;
+          margin-left: -10px;
+          margin-right: -5px;
+         padding-top: -2px;
+         padding-left: 2px;
+         padding-right: 2px;
+         padding-bottom: 2px;
+       }
+       .footerResponsivo li { list-style: none; }
+       .footerResponsivo h2 {
+         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+         font-size: 30px;
+         color: lightgray;
+         font-weight: bold;
+       }
+       .footerResponsivo p {
+         font-size: small;
+         color: lightgray;
+         text-align: center;
+       }
+       .figureResponsivo {
+         position: relative;
+          top: 0px;}
+       .copyResponsivo {
+         margin-top: 0px;
+         color: rgb(211,211,211);
+       }
+     #carrosselinv { display:inline-flex;}
+        .carrossel2 {
+       width: 1000px;
+       overflow: hidden;
+       justify-content: center;
+     }
+      .carrossel2 ul {
+        overflow:hidden;
+         display: inline-flex;
+         list-style: none;
+         width: 3000px;
+         height: 500px;
+        margin-right:-20px;
+         margin: 0%;
+         padding: 0%;
+       }
+       .carrossel2 li {
+         position: relative;
+         animation: slide 15s infinite ease-out;
+       }    
+       @keyframes slide {
+         0% { left: 0px }
+         20% { left: 0px }
+         30% { left: -1000px }
+         50% { left: -1000px }
+         60% { left: -2000px }
+         90% { left: -2000PX; }
+         100% { left: 0px }
+       }
+   }
+   @media (max-width: 1000px){
+     
+   }
+   
